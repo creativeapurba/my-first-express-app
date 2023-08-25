@@ -37,6 +37,10 @@ app.get("/html", (req, res)=>{
    res.send("<h1 style='color:red'>Html</h1>")
 })
 
+app.get("/login", (req, res)=>{
+   res.sendFile(__dirname + "/public/login.html")
+})
+
 app.listen(port, () => {
    console.log("App is running");
 })
