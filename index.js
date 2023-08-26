@@ -18,6 +18,9 @@ app.get("/home", (req, res) => {
 app.get("/redirect", (req, res)=>{
    res.redirect("/home")
 })
+app.get("/user",(req, res)=>{
+   res.send({name: "Omprakash"})
+})
 
 app.get("/multiline", (req, res)=>{
    res.write("Line 1\n")

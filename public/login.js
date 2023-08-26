@@ -26,7 +26,7 @@ function login(){
         if(user.username == username.value && user.password == password.value){
             loggedIn = true;
             console.log("Login Successful");
-            location.href="./index.html";
+            location.href="./helloUser.html";
         }
     }
     if(!loggedIn){
